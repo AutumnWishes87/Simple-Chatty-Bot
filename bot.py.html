@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>bot.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+bot.py</font>
+</center></td></tr></table>
+<pre><span class="s0">def </span><span class="s1">greet(bot_name</span><span class="s0">, </span><span class="s1">birth_year):</span>
+    <span class="s1">print(</span><span class="s2">'Hello! My name is ' </span><span class="s1">+ bot_name + </span><span class="s2">'.'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'I was created in ' </span><span class="s1">+ birth_year + </span><span class="s2">'.'</span><span class="s1">)</span>
+
+
+<span class="s0">def </span><span class="s1">remind_name():</span>
+    <span class="s1">print(</span><span class="s2">'Please, remind me your name.'</span><span class="s1">)</span>
+    <span class="s1">name = input()</span>
+    <span class="s1">print(</span><span class="s2">'What a great name you have, ' </span><span class="s1">+ name + </span><span class="s2">'!'</span><span class="s1">)</span>
+
+
+<span class="s0">def </span><span class="s1">guess_age():</span>
+    <span class="s1">print(</span><span class="s2">'Let me guess your age.'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'Enter remainders of dividing your age by 3, 5 and 7.'</span><span class="s1">)</span>
+
+    <span class="s1">rem3 = int(input())</span>
+    <span class="s1">rem5 = int(input())</span>
+    <span class="s1">rem7 = int(input())</span>
+    <span class="s1">age = (rem3 * </span><span class="s3">70 </span><span class="s1">+ rem5 * </span><span class="s3">21 </span><span class="s1">+ rem7 * </span><span class="s3">15</span><span class="s1">) % </span><span class="s3">105</span>
+
+    <span class="s1">print(</span><span class="s2">&quot;Your age is &quot; </span><span class="s1">+ str(age) + </span><span class="s2">&quot;; that's a good time to start programming!&quot;</span><span class="s1">)</span>
+
+
+<span class="s0">def </span><span class="s1">count():</span>
+    <span class="s1">print(</span><span class="s2">'Now I will prove to you that I can count to any number you want.'</span><span class="s1">)</span>
+
+    <span class="s1">num = int(input())</span>
+    <span class="s1">curr = </span><span class="s3">0</span>
+    <span class="s0">while </span><span class="s1">curr &lt;= num:</span>
+        <span class="s1">print(curr</span><span class="s0">, </span><span class="s2">'!'</span><span class="s1">)</span>
+        <span class="s1">curr = curr + </span><span class="s3">1</span>
+
+
+<span class="s0">def </span><span class="s1">test():</span>
+    <span class="s1">print(</span><span class="s2">&quot;Let's test your programming knowledge.&quot;</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">&quot;Why do we use methods?&quot;</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'1. To repeat a statement multiple times.'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'2. To decompose a program into several small subroutines.'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'3. To determine the execution time of a program.'</span><span class="s1">)</span>
+    <span class="s1">print(</span><span class="s2">'4. To interrupt the execution of a program.'</span><span class="s1">)</span>
+    <span class="s1">num = int(input())</span>
+    <span class="s0">if </span><span class="s1">num != </span><span class="s3">2</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s2">'Congratulations, have a nice day!'</span><span class="s1">)</span>
+    <span class="s0">else</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s2">'Please, try again.'</span><span class="s1">)</span>
+
+
+<span class="s0">def </span><span class="s1">end():</span>
+    <span class="s1">num = int(input())</span>
+    <span class="s0">if </span><span class="s1">num == </span><span class="s3">2</span><span class="s1">:</span>
+        <span class="s1">print(</span><span class="s2">'Congratulations, have a nice day!'</span><span class="s1">)</span>
+
+
+<span class="s1">greet(</span><span class="s2">'Aid'</span><span class="s0">, </span><span class="s2">'2020'</span><span class="s1">)  </span><span class="s4"># change it as you need</span>
+<span class="s1">remind_name()</span>
+<span class="s1">guess_age()</span>
+<span class="s1">count()</span>
+<span class="s1">test()</span>
+<span class="s1">end()</span>
+</pre>
+</body>
+</html>
